@@ -35,127 +35,127 @@
 \def\layerwidth{75em}
 
 \makebox[\textwidth][c]{
-\begin{tikzpicture}[
-% Define block parameters (mostly shape)
-    bloc/.style={
-      rectangle, rounded corners,
-      draw=black!30, very thick, inner sep=0,
-    },
-    bloc1/.style={
-      bloc,
-      text width = \layerwidth/5,
-      minimum width = \layerwidth/5,
-      minimum height= 4*\layersep
-    },
-    bloc2/.style={
-      bloc,
-      text width = \layerwidth/5,
-      minimum width=\layerwidth/5,
-      minimum height=2*\layersep
-    },
-    bloc3/.style={
-      bloc,
-      text width=\layerwidth/2,
-      minimum height=\layersep
-    },
-    title/.style={
-      anchor=north west,
-      color=black!50,
-      font=\bfseries
-    },
-  ]
-  
-  %%%%%%%%%%%%%%%%%%%%%%%%
-  %%% DRAW THE CANVAS
-  %%%%%%%%%%%%%%%%%%%%%%%%
+  \begin{tikzpicture}[
+      % Define block parameters (mostly shape)
+      bloc/.style={
+        rectangle, rounded corners,
+        draw=black!30, very thick, inner sep=0,
+      },
+      bloc1/.style={
+        bloc,
+        text width = \layerwidth/5,
+        minimum width = \layerwidth/5,
+        minimum height= 4*\layersep
+      },
+      bloc2/.style={
+        bloc,
+        text width = \layerwidth/5,
+        minimum width=\layerwidth/5,
+        minimum height=2*\layersep
+      },
+      bloc3/.style={
+        bloc,
+        text width=\layerwidth/2,
+        minimum height=\layersep
+      },
+      title/.style={
+        anchor=north west,
+        color=black!50,
+        font=\bfseries
+      },
+    ]
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%
+    %%% DRAW THE CANVAS
+    %%%%%%%%%%%%%%%%%%%%%%%%
 
-  % The 7 top blocks
+    % The 7 top blocks
 
-  % We start drawing the top left bloc here
-  % 1st, the block, then the title, then the post-it
-  \node[bloc1] (b0) at (0*\layerwidth/10,4*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b0.north west) {\underline{1. Problem}};
+    % We start drawing the top left bloc here
+    % 1st, the block, then the title, then the post-it
+    \node[bloc1] (b0) at (0*\layerwidth/10,4*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b0.north west) {\underline{1. Problem}};
 
-  \node[bloc2] (b1) at (2*\layerwidth/10,5*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b1.north west) {\underline{2. Target audience}};
+    \node[bloc2] (b1) at (2*\layerwidth/10,5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b1.north west) {\underline{2. Target audience}};
 
-  \node[bloc2] (b2) at (2*\layerwidth/10,3*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b2.north west) {\underline{3. Solution}};
+    \node[bloc2] (b2) at (2*\layerwidth/10,3*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b2.north west) {\underline{3. Solution}};
 
-  \node[bloc1] (b3) at (4*\layerwidth/10,4*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b3.north west) {\underline{6. Value Propositions}};
+    \node[bloc1] (b3) at (4*\layerwidth/10,4*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b3.north west) {\underline{6. Value Propositions}};
 
-  \node[bloc2] (b4) at (6*\layerwidth/10,5*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b4.north west) {\underline{7. Unfair Advantage}};
+    \node[bloc2] (b4) at (6*\layerwidth/10,5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b4.north west) {\underline{7. Unfair Advantage}};
 
-  \node[bloc2] (b5) at (6*\layerwidth/10,3*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b5.north west) {\underline{8. Expected Impact}};
+    \node[bloc2] (b5) at (6*\layerwidth/10,3*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b5.north west) {\underline{8. Expected Impact}};
 
-  \node[bloc2] (b6) at (8*\layerwidth/10,5*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b6.north west) {\underline{9. Key Resources Needed}};
+    \node[bloc2] (b6) at (8*\layerwidth/10,5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b6.north west) {\underline{9. Key Resources Needed}};
 
-  \node[bloc2] (b7) at (8*\layerwidth/10,3*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b7.north west) {\underline{10. Novelty}};
+    \node[bloc2] (b7) at (8*\layerwidth/10,3*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b7.north west) {\underline{10. Novelty}};
 
-  %%%% The 2 bottom blocks
-  \node[bloc3] (b8) at (1.5*\layerwidth/10,1.5*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b8.north west) {\underline{4. What is Known?}};
+    %%%% The 2 bottom blocks
+    \node[bloc3] (b8) at (1.5*\layerwidth/10,1.5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b8.north west) {\underline{4. What is Known?}};
 
-  \node[bloc3] (b9) at (6.5*\layerwidth/10,1.5*\layersep) {
-    \begin{itemize}
-    \item Text
-    \item More text
-    \end{itemize}
-  };
-  \node[title] at (b9.north west) {\underline{5. What is Unknown?}};
+    \node[bloc3] (b9) at (6.5*\layerwidth/10,1.5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b9.north west) {\underline{5. What is Unknown?}};
 
 
-\end{tikzpicture}
+  \end{tikzpicture}
 }
 
 \end{document}
