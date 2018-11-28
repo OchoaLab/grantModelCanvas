@@ -73,7 +73,9 @@
     % The 7 top blocks
 
     % We start drawing the top left bloc here
-    % 1st, the block, then the title, then the post-it
+    % 1st, the block, then the title
+    
+    % PROBLEM
     \node[bloc1] (b0) at (0*\layerwidth/10,4*\layersep) {
       \begin{itemize}
       \item Text
@@ -82,6 +84,7 @@
     };
     \node[title] at (b0.north west) {\underline{1. Problem}};
 
+    % TARGET AUDIENCE
     \node[bloc2] (b1) at (2*\layerwidth/10,5*\layersep) {
       \begin{itemize}
       \item Text
@@ -90,6 +93,7 @@
     };
     \node[title] at (b1.north west) {\underline{2. Target audience}};
 
+    % SOLUTION
     \node[bloc2] (b2) at (2*\layerwidth/10,3*\layersep) {
       \begin{itemize}
       \item Text
@@ -98,6 +102,7 @@
     };
     \node[title] at (b2.north west) {\underline{3. Solution}};
 
+    % VALUE PROPOSITIONS
     \node[bloc1] (b3) at (4*\layerwidth/10,4*\layersep) {
       \begin{itemize}
       \item Text
@@ -106,6 +111,7 @@
     };
     \node[title] at (b3.north west) {\underline{6. Value Propositions}};
 
+    % UNFAIR ADVANTAGE
     \node[bloc2] (b4) at (6*\layerwidth/10,5*\layersep) {
       \begin{itemize}
       \item Text
@@ -114,6 +120,7 @@
     };
     \node[title] at (b4.north west) {\underline{7. Unfair Advantage}};
 
+    % EXPECTED IMPACT
     \node[bloc2] (b5) at (6*\layerwidth/10,3*\layersep) {
       \begin{itemize}
       \item Text
@@ -122,6 +129,7 @@
     };
     \node[title] at (b5.north west) {\underline{8. Expected Impact}};
 
+    % KEY RESOURCES NEEDED
     \node[bloc2] (b6) at (8*\layerwidth/10,5*\layersep) {
       \begin{itemize}
       \item Text
@@ -130,6 +138,7 @@
     };
     \node[title] at (b6.north west) {\underline{9. Key Resources Needed}};
 
+    % NOVELTY
     \node[bloc2] (b7) at (8*\layerwidth/10,3*\layersep) {
       \begin{itemize}
       \item Text
@@ -139,6 +148,8 @@
     \node[title] at (b7.north west) {\underline{10. Novelty}};
 
     %%%% The 2 bottom blocks
+
+    % WHAT IS KNOWN?
     \node[bloc3] (b8) at (1.5*\layerwidth/10,1.5*\layersep) {
       \begin{itemize}
       \item Text
@@ -147,6 +158,7 @@
     };
     \node[title] at (b8.north west) {\underline{4. What is Known?}};
 
+    % WHAT IS UNKNOWN?
     \node[bloc3] (b9) at (6.5*\layerwidth/10,1.5*\layersep) {
       \begin{itemize}
       \item Text
