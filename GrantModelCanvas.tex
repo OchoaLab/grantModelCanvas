@@ -11,12 +11,20 @@
 \pagenumbering{gobble} % supress page numbers
 \usepackage{hyperref}
 \usepackage{datetime2} % YYYY-MM-DD format!
+% Sans-serif fonts
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv} 
 
 \usepackage{tikz}
 
 \title{\vspace{-1em}The Grant Model Canvas}
 \author{Alejandro Ochoa --- \href{mailto:alejandro.ochoa@duke.edu}{\nolinkurl{alejandro.ochoa@duke.edu} } --- \url{https://ochoalab.github.io/}}
-\date{Version: \today --- Due date: 2019-06-05}
+\date{
+  \textbf{\color{black!50}Version:} \today
+  ~\textbf{\color{black!50}---}
+  \textbf{\color{black!50}Due date:} 2019-06-05
+}
+
 
 \begin{document}
 \maketitle
@@ -31,7 +39,7 @@
 % Define block parameters (mostly shape)
     bloc/.style={
       rectangle, rounded corners,
-      draw=black, very thick, inner sep=0,
+      draw=black!30, very thick, inner sep=0,
     },
     bloc1/.style={
       bloc,
@@ -51,7 +59,10 @@
       minimum height=\layersep
     },
     title/.style={
-      anchor=north west },
+      anchor=north west,
+      color=black!50,
+      font=\bfseries
+    },
   ]
   
   %%%%%%%%%%%%%%%%%%%%%%%%
