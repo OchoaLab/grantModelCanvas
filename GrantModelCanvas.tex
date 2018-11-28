@@ -70,9 +70,6 @@
     %%% DRAW THE CANVAS
     %%%%%%%%%%%%%%%%%%%%%%%%
 
-    % The 7 top blocks
-
-    % We start drawing the top left bloc here
     % 1st, the block, then the title
     
     % PROBLEM
@@ -101,6 +98,24 @@
       \end{itemize}
     };
     \node[title] at (b2.north west) {\underline{3. Solution}};
+
+    % WHAT IS KNOWN?
+    \node[bloc3] (b8) at (1.5*\layerwidth/10,1.5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b8.north west) {\underline{4. What is Known?}};
+
+    % WHAT IS UNKNOWN?
+    \node[bloc3] (b9) at (6.5*\layerwidth/10,1.5*\layersep) {
+      \begin{itemize}
+      \item Text
+      \item More text
+      \end{itemize}
+    };
+    \node[title] at (b9.north west) {\underline{5. What is Unknown?}};
 
     % VALUE PROPOSITIONS
     \node[bloc1] (b3) at (4*\layerwidth/10,4*\layersep) {
@@ -146,27 +161,6 @@
       \end{itemize}
     };
     \node[title] at (b7.north west) {\underline{10. Novelty}};
-
-    %%%% The 2 bottom blocks
-
-    % WHAT IS KNOWN?
-    \node[bloc3] (b8) at (1.5*\layerwidth/10,1.5*\layersep) {
-      \begin{itemize}
-      \item Text
-      \item More text
-      \end{itemize}
-    };
-    \node[title] at (b8.north west) {\underline{4. What is Known?}};
-
-    % WHAT IS UNKNOWN?
-    \node[bloc3] (b9) at (6.5*\layerwidth/10,1.5*\layersep) {
-      \begin{itemize}
-      \item Text
-      \item More text
-      \end{itemize}
-    };
-    \node[title] at (b9.north west) {\underline{5. What is Unknown?}};
-
 
   \end{tikzpicture}
 }
