@@ -1,4 +1,4 @@
-# The Grant Model Canvas for Developing Great Grants
+# LaTeX version of the Grant Model Canvas for Developing Great Grants
 
 ![Preview of GrantModelCanvas.pdf](GrantModelCanvas.png)
 
